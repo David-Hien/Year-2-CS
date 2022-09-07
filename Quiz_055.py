@@ -1,6 +1,3 @@
-from unittest import result
-
-
 class Converter():
     def __init__(self, number):
         self.number = number

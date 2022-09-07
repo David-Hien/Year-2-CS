@@ -7,6 +7,8 @@ class converter:
         if number > 9:
             return chr(number + 55)
 
+        return number
+
     def build(self):
         result = ""
         while self.decimal > 0:
