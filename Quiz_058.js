@@ -14,10 +14,8 @@ class neighbor {
                 return "Error"
             }
 
-            this.result[a].push(b)
-            this.result[b].push(a)
-
-            console.log(this.result)
+            this.result[a] = [...this.result[a], b]
+            this.result[b] = [...this.result[b], a]
         }
 
         return this.result
