@@ -6,16 +6,7 @@ class stack:
         self.items = []
 
     def __repr__(self) -> str:  # string representation
-        output = ""
-        border_length = 0
-
-        for item in self.items: # generate the stack
-            output += self.color(item) + " | "
-            border_length += len(str(item)) + 3
-
-        border = "-" * (border_length + 1)
-
-        return f"{border} \n| {output}\n{border}"
+        return str(self.items)
 
     def color(self, item):
         r = random.randint(0, 255)
